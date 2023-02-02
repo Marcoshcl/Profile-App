@@ -11,9 +11,9 @@
         android:id="@+id/card_view_data"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_margin="@dimen/profile_margin"
-        android:backgroundTint="#ACAAAA"
-        app:cardCornerRadius="@dimen/profile_radius"
+        android:layout_margin="@dimen/spacing_6x"
+        android:backgroundTint="@color/gray"
+        app:cardCornerRadius="@dimen/spacing_8x"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -22,25 +22,25 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/image_view_profile"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="10dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/image_view_profile"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
 
-        <TextView
-            android:id="@+id/text_view_profile"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_margin="@dimen/profile_margin"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/image_view_profile"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/text_view_profile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/spacing_4x"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -50,9 +50,9 @@
         android:id="@+id/fragment_container_view_one"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_margin="@dimen/profile_margin"
-        app:cardCornerRadius="@dimen/profile_radius"
-        tools:layout="@layout/fragment_fotos"
+        android:layout_margin="@dimen/spacing_4x"
+        app:cardCornerRadius="@dimen/spacing_8x"
+        tools:layout="@layout/fragment_photos"
         app:layout_constraintTop_toBottomOf="@+id/button_fotos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -62,9 +62,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/profile_fotos"
-        android:backgroundTint="@color/teal_200"
-        android:layout_margin="@dimen/profile_margin"
-        app:cardCornerRadius="@dimen/profile_radius"
+        android:backgroundTint="@color/gray"
+        android:layout_margin="@dimen/spacing_4x"
+        app:cardCornerRadius="@dimen/spacing_8x"
         app:layout_constraintTop_toBottomOf="@+id/card_view_data"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_curiosidades" >
@@ -74,8 +74,8 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="@dimen/image_button_size"
-                android:layout_height="@dimen/image_button_size"
+                android:layout_width="@dimen/size_2x"
+                android:layout_height="@dimen/size_2x"
                 android:src="@drawable/ic_baseline_camera_alt_24"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -91,9 +91,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/profile_curiosidades"
-        android:backgroundTint="@color/teal_200"
-        android:layout_margin="@dimen/profile_margin"
-        app:cardCornerRadius="@dimen/profile_radius"
+        android:backgroundTint="@color/gray"
+        android:layout_margin="@dimen/spacing_4x"
+        app:cardCornerRadius="@dimen/spacing_8x"
         app:layout_constraintTop_toBottomOf="@+id/card_view_data"
         app:layout_constraintStart_toEndOf="@+id/button_fotos"
         app:layout_constraintEnd_toEndOf="parent">
@@ -103,9 +103,9 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="@dimen/image_button_size"
-                android:layout_height="@dimen/image_button_size"
-                android:src="@drawable/ic_lupa"
+                android:layout_width="@dimen/size_2x"
+                android:layout_height="@dimen/size_2x"
+                android:src="@drawable/ic_baseline_description_24"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>

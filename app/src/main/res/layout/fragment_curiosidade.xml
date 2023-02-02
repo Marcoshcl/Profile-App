@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".FragmentCuriosidades">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentCuriosities">
 
-    <TextView
-        android:id="@+id/text_view_curiosidades"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_curiosity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="18dp"
-        tools:text="hello_curiosidade_fragment" />
+        tools:listitem="@layout/item_curiosity"
+        app:spanCount="3"
+        tools:itemCount="3"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
